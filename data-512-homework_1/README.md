@@ -64,8 +64,6 @@ The project creates output files:
 
   Schema for each output JSON is as follows:
 
-  The schema for the generated datasets is as follows:
-
 ```{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Generated schema for Root",
