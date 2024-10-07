@@ -17,7 +17,7 @@ To gather the data, the [Pageviews API](https://doc.wikimedia.org/generated-data
 
 ## Project Steps
 ### 1. Data Collection
-The project starts by collecting pageview data for Wikipedia articles related to rare diseases. The articles were identified by matching a database of rare diseases maintained by the National Organization for Rare Diseases (NORD) to corresponding Wikipedia articles. 
+The project starts by collecting pageview data for Wikipedia articles related to rare diseases. These articles were identified by matching a database of rare diseases maintained by the National Organization for Rare Diseases (NORD) to corresponding Wikipedia articles. The raw dataset containing the rare disease name, pageid and url can be found and downloaded from the repository in the file rare-disease_cleaned.AUG.2024.csv.
 
 Three datasets are generated from the collected data, each representing monthly activity for different access types. All datasets are saved in JSON format with article titles as keys and corresponding time series data as values:
 
