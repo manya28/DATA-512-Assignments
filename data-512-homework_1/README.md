@@ -28,8 +28,6 @@ Three datasets are generated from the collected data, each representing monthly 
 3. **Monthly Cumulative** (`rare-disease_monthly_cumulative_<startYYYYMM>-<endYYYYMM>.json`):
    - Includes cumulative pageviews from both mobile and desktop platforms using access_type = "all-access".
 
-Each dataset includes timestamps (in YYYYMM format) and the corresponding pageview counts.
-
 ### 2. Data Analysis
 The collected data is analyzed to produce the following visualizations:
 
@@ -57,23 +55,64 @@ pip install -r requirements.txt
 ```
 
 ### 4. Data Files
-The project creates several intermediary and final output files:
+The project creates output files:
 
-- **JSON Files** (stored in `datasets/`):
+- **Output JSON Files** (stored in `datasets/`):
   1. `rare-disease_monthly_mobile_<startYYYYMM>-<endYYYYMM>.json`
   2. `rare-disease_monthly_desktop_<startYYYYMM>-<endYYYYMM>.json`
   3. `rare-disease_monthly_cumulative_<startYYYYMM>-<endYYYYMM>.json`
+
+  Schema for each output JSON is as follows:
+
+  The schema for the generated datasets is as follows:
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Generated schema for Root",
+  "type": "object",
+  "properties": {
+    "Klinefelter syndrome": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "project": {
+            "type": "string"
+          },
+          "article": {
+            "type": "string"
+          },
+          "granularity": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": "string"
+          },
+          "agent": {
+            "type": "string"
+          },
+          "views": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "project",
+          "article",
+          "granularity",
+          "timestamp",
+          "agent",
+          "views"
+        ]
+      }
+    }
+  }
+}
 
 - **Image Files** (stored in `imgs/`):
   1. `max_min_avg_pageviews.png`
   2. `top_10_peak_pageviews.png`
   3. `fewest_months_data.png`
 
-For each JSON file, the schema is as follows:
-- **Key**: Article title (string)
-- **Value**: List of dictionaries containing:
-  - `timestamp` (string): Year and month (in YYYYMM format)
-  - `views` (integer): Number of pageviews for that month
 
 ### 5. Known Issues and Considerations
 - **API Limitations**: The Wikimedia Pageviews API has rate limits, so care must be taken to avoid exceeding these limits when collecting data.
