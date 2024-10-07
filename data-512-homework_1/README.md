@@ -106,7 +106,8 @@ The project creates output files:
       }
     }
   }
-}```
+}
+```
 
 - **Image Files** (stored in `imgs/`):
   1. `max_min_avg_pageviews.png`
