@@ -66,7 +66,7 @@ The project creates output files:
 
   The schema for the generated datasets is as follows:
 
-{
+```{
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Generated schema for Root",
   "type": "object",
@@ -106,7 +106,7 @@ The project creates output files:
       }
     }
   }
-}
+}```
 
 - **Image Files** (stored in `imgs/`):
   1. `max_min_avg_pageviews.png`
