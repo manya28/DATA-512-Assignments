@@ -51,6 +51,7 @@ To run the project, the following dependencies are required. These dependencies 
 
 - `matplotlib==3.8.3` for plotting the visualizations
 - `pandas==1.5.3` for data manipulation
+- `numpy==1.21.6` for mathematical operations
 - `Requests==2.32.3` for API calls
 
 To install the dependencies, you can run:
