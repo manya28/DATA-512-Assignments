@@ -5,7 +5,9 @@ layout: default
 # Rare Disease Wikipedia Pageviews Analysis
 
 ## Project Goal
-The goal of this project is to analyze Wikipedia page traffic for a subset of articles related to rare diseases from 2015 to 2024 using data collected from the Wikimedia Analytics Pageviews API. Specifically, this project focuses on measuring the traffic for these articles across desktop and mobile platforms, generating several time series datasets, and performing basic visual analysis of the data. The results will help to understand trends and patterns in public interest regarding rare diseases over time.
+The goal of this project is to analyze Wikipedia page traffic for a subset of articles related to rare diseases from 2015 to 2024 using data collected from the Wikimedia Analytics Pageviews API. Specifically, this project focuses on measuring the traffic for these articles across desktop and mobile platforms, generating several time series datasets, and performing basic visual analysis of the data. The results will help to understand trends and patterns in public interest regarding rare diseases over time. 
+
+All of the code is contained within the same jupyter notebook, titled main-workflow.ipynb. Each process, namely Data Acquisition, Processing and Visualization have been sectioned within the notebook.
 
 ## Data Source and License
 The data for this project is sourced from the [Wikimedia Analytics Pageviews API](https://doc.wikimedia.org/generated-data-platform/aqs/analytics-api/reference/page-views.html). The API provides access to page traffic data, including desktop, mobile web, and mobile app views, starting from July 2015 through the most recent complete month.
