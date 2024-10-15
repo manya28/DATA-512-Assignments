@@ -130,14 +130,7 @@ The data used from Wikipedia is subject to the [Wikimedia Foundation Terms of Us
 - **Missing Data**:
   - A small number of articles (8) did not have available `lastrevid` or quality scores from ORES. The articles are listed below.
   ```
-  ['Barbara Eibinger-Miedl',
- 'Mehrali Gasimov',
- 'Kyaw Myint',
- 'André Ngongang Ouandji',
- 'Tomás Pimentel',
- 'Richard Sumah',
- "Segun ''Aeroland'' Adewale",
- 'Bashir Bililiqo']
+  ['Barbara Eibinger-Miedl','Mehrali Gasimov','Kyaw Myint','André Ngongang Ouandji','Tomás Pimentel','Richard Sumah',"Segun ''Aeroland'' Adewale",'Bashir Bililiqo']
  ```
   - Articles without `revision_id` or `article_quality` are marked accordingly in the dataset.
 
