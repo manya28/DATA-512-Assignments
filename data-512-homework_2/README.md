@@ -128,7 +128,17 @@ The data used from Wikipedia is subject to the [Wikimedia Foundation Terms of Us
   - Duplicate articles with the same name and URL but different countries were identified and handled appropriately.
 
 - **Missing Data**:
-  - A small number of articles (8) did not have available `lastrevid` or quality scores from ORES.
+  - A small number of articles (8) did not have available `lastrevid` or quality scores from ORES. The articles are listed below.
+  ```
+  ['Barbara Eibinger-Miedl',
+ 'Mehrali Gasimov',
+ 'Kyaw Myint',
+ 'André Ngongang Ouandji',
+ 'Tomás Pimentel',
+ 'Richard Sumah',
+ "Segun ''Aeroland'' Adewale",
+ 'Bashir Bililiqo']
+ ```
   - Articles without `revision_id` or `article_quality` are marked accordingly in the dataset.
 
 - **Data Limitations**:
@@ -172,6 +182,14 @@ The data used from Wikipedia is subject to the [Wikimedia Foundation Terms of Us
    - `quality_labels.json` will be created containing article quality labels.
    - `wp_countries-no_match.txt` will list countries without matching population data and is found in datasets folder.
    - `wp_politicians_by_country.csv` will be generated as the final merged dataset and is found in datasets folder.
+
+---
+
+## Research Implications
+
+Through the course of this project, I have learned that 
+One of your paragraphs should reflect on what you have learned, what you found, what (if anything) surprised you about your findings, and/or what theories you have about why any biases might exist (if you find they exist).
+
 
 ---
 
