@@ -18,3 +18,9 @@ config.py
 
 # Ignore apikeys module
 apikeys.zip
+
+# Ignore intermediary files and example notebooks 
+quality_labels.json
+wp_ores_liftwing_example.ipynb
+wp_page_info_example.ipynb
+Homework 2 - Considering Bias in Data.docx
