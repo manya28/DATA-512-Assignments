@@ -134,7 +134,7 @@ The data used from Wikipedia is subject to the [Wikimedia Foundation Terms of Us
 
 - **Data Limitations**:
   - **Language Bias**: The analysis is based on the English Wikipedia, which may not represent global coverage accurately due to language preferences.
-  - **Population Data Currency**: Population figures are approximate and may not reflect the most current data.
+  - **Population Data Currency**: Population figures are approximate and may not reflect the most current data. Some countries showcased a population of 0 but have not explicitly been removed form the daatset.
 
 - **API Rate Limits**:
   - The ORES API has rate limits, and throttling was implemented to respect these limits.
@@ -178,20 +178,30 @@ The data used from Wikipedia is subject to the [Wikimedia Foundation Terms of Us
 
 ## Research Implications
 
-Through the course of this project, I have learned that 
-One of your paragraphs should reflect on what you have learned, what you found, what (if anything) surprised you about your findings, and/or what theories you have about why any biases might exist (if you find they exist).
+This project highlights the disparities in Wikipedia coverage and article quality among countries and regions. The findings suggest potential biases in data availability and quality which could be influenced by factors such as language, internet accessibility, and affluence.
+
+Some key findings and associated thoughts are detailed as follows:
+
+- The bottom 2 countries for article count per capita are China and India respectively. These are the two most populous countries in the World, and their population is several maginitudes higher (in 1000s of millions) compared to the rest of the bottom 10 countries. However, they might have had the same number of polticians as the rest of the countries, resulting in similar article counts, but have had populations skyrocket. This begs the question if article count per capita is a good measure of article coverage, or if some other kind of metric like absolute article counts, is better.
+
+- It is interesting to note that majority of both, the top 10 and the bottom 10 for article count per capita are non-English speaking countries. What is also fascinating is the emerging relationship between affluence and article quality as countries like U.S. and U.K. are removed from the dataset.
 
 
----
+Q. What biases did you expect to find in the data (before you started working with it), and why?
 
-## Additional Notes
+A. I expected to find linguistic biases, i.e., high article coverage and high number of high quality articles from majority English-speaking countries like the U.S. and the U.K., since the data was scraped specifically from English Wikipedia. My assumption was that a lot of countries, such as China, would have experts that would be more comfortable dissemminating information in their own language. However, once those countries showed up in the wp_countries-no_match.txt file, it became clear that this might have been a choice made by the data aggregator to examine countries other than these ones. 
 
-- **Reflection**:
-  - This project highlights the disparities in Wikipedia coverage and article quality among countries and regions.
-  - The findings suggest potential biases in data availability and quality, influenced by factors such as language, internet accessibility, and editorial focus.
+Q. What (potential) sources of bias did you discover in the course of your data processing and analysis?
 
-- **Contributions**:
-  - Researchers using this dataset are encouraged to attribute the original sources and share any derivative works under the same license.
+A. A potential source of bias was the use of Population to generate per capita metrics in both country as well as regional cases. While it seems like a standardized measure, I observed that it heavily inflated the coverage numbers for regions/countries with populations less than a million and had the opposite effect for highly populated regions/countries. I also found that the top 10 countries with high quality articles were majorly all from affluent European countries, while the bottom 10 countries were all (with the exception of Japan) poorer non-European countries that were experiencing some kind of political tensions, uprisings, etc. These findings indicate some kind of correlation between factors like GDP per capita or income inequality (GINI index) and total article counts as well as total number of high quality articles. 
+
+Q. What might your results suggest about (English) Wikipedia as a data source?
+
+A. It is easy to interpret these results as suggesting that people from some parts of the world are more involved in the curation and maintenance of their politicians' Wikipedia pages than others, but I am not convinced that is true. Many countries with non-English speakers have a certain style of speaking, which transfers from their native language to English, and more often than not, it doesn't suit English as well as it does their own language. This could mean that if the contributors are non-native English speakers, they might be contributing good information but due to their poor command on the language, not be able to clearly express their thoughts. This kind of scenario might actually do more harm than good and lead to lowly ranked articles by the ORES tool. 
+
+Q. How might a researcher supplement or transform this dataset to potentially correct for the limitations/biases you observed?
+
+A. A researcher truly interested in understanding politician coverage might want to explore relations beyond article counts, quality and population. They'd want to see the relation between GDP per capita and article counts/quality, as preliminary findings indicate that affluent regions tend to have more high quality articles. Similarly, there is evidence that points towards a relation between political instability and article quality. Further, a researcher might benefit from noting the official languages of each country to understand if there is a language bias within English Wikipedia as a source and if that changes for countries in their native languages. There are plenty of other avenues that a researcher could take, like assessing relationship between article coverage/quality and internet access or even number of editors and rate of revisions made to pages per country, to get a more holistic picture of political coverage in different countries and related factors that could contribute to biasedness.
 
 ---
 
