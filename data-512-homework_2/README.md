@@ -170,8 +170,8 @@ The data used from Wikipedia is subject to the [Wikimedia Foundation Terms of Us
 
 4. **Output Files**:
    - `quality_labels.json` will be created containing article quality labels.
-   - `wp_countries-no_match.txt` will list countries without matching population data.
-   - `wp_politicians_by_country.csv` will be generated as the final merged dataset.
+   - `wp_countries-no_match.txt` will list countries without matching population data and is found in datasets folder.
+   - `wp_politicians_by_country.csv` will be generated as the final merged dataset and is found in datasets folder.
 
 ---
 
