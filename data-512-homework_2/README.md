@@ -164,9 +164,9 @@ The data used from Wikipedia is subject to the [Wikimedia Foundation Terms of Us
      - `population_by_country_AUG.2024.csv`
 
 3. **Running the Notebook**:
-   - Open the Jupyter notebook.
+   - Open the Jupyter notebook titled `main-workflow.ipynb`.
    - Run each cell sequentially to execute the code.
-   - The code includes API calls; ensure you have internet access and respect API rate limits.
+   - The code includes API calls; ensure you have internet access, necessary access tokens and respect API rate limits.
 
 4. **Output Files**:
    - `quality_labels.json` will be created containing article quality labels.
