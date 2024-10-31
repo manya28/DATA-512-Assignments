@@ -1,5 +1,1 @@
-### Creating Smoke Estimates - Rationale
-- Using # of fires in a year 
-- Using distance of fire 
-- Using area burned 
-- Using duration of fire (estimated)
+This repository contains all the code for assignments set by Dr. David W. McDonald for the DATA 512 - Human-Centered Data Science course (UW MSDS 2024)
